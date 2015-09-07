@@ -1,0 +1,13 @@
+{
+	"type" : "project",
+	"require" : {
+		"php" : ">=5.3.2",
+		"components/bootstrap" : "^3.3",
+		"components/jquery" : "^1.9"
+	},
+	"config" : {
+		"component-dir" : "lib/components",
+		"component-baseurl" : "lib/components",
+		"vendor-dir" : "lib"
+	}
+}

@@ -15,6 +15,7 @@ class Resources
      */
     protected static $alias = array(
         '@jQuery' => 'lib/components/jquery/jquery.min.js',
+    	'@jQuery-migrate' => 'lib/components/jquery/jquery-migrate.min.js',
 
         '@ckeditor' => 'plugins/ckeditor/lib/ckeditor.js',
         '@ckeditorPreset.js' => 'plugins/ckeditor/presets/ckeditor.default.set.js',
@@ -158,6 +159,9 @@ class Resources
             case '@ckeditor':
                 $ret[] = '@ckeditorPreset.js';
                 break;
+
+            case '@jQuery':
+            	$ret[] = '@jQuery-migrate';
         }
 
         return $ret;

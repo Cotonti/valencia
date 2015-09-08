@@ -14,14 +14,14 @@ class Resources
      * @var array predefined aliases
      */
     protected static $alias = array(
-        '@jQuery' => 'js/jquery.min.js',
+        '@jQuery' => 'lib/components/jquery/jquery.min.js',
 
         '@ckeditor' => 'plugins/ckeditor/lib/ckeditor.js',
         '@ckeditorPreset.js' => 'plugins/ckeditor/presets/ckeditor.default.set.js',
 
-        '@bootstrap.js' => 'lib/bootstrap/js/bootstrap.min.js',
-        '@bootstrap.css' => 'lib/bootstrap/css/bootstrap.min.css',
-        '@bootstrapTheme.css' => null,    // Undefined value. You can set to: lib/bootstrap/css/bootstrap-theme.min.css
+        '@bootstrap.js' => 'lib/components/bootstrap/js/bootstrap.min.js',
+        '@bootstrap.css' => 'lib/components/bootstrap/css/bootstrap.min.css',
+        '@bootstrapTheme.css' => null,    // Undefined value. You can set to: lib/components/bootstrap/css/bootstrap-theme.min.css
     );
 
     // ==== predefined alias constants  ====
@@ -86,7 +86,7 @@ class Resources
      * Puts a JS/CSS file into the header resource registry to be consolidated with other
      * such resources and stored in cache.
      *
-     * It is recommened to use files instead of embedded code and use this method
+     * It is recommended to use files instead of embedded code and use this method
      * instead of Resources::addEmbed(). Use this way for any sort of static JavaScript or
      * CSS linking.
      *

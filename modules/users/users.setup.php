@@ -3,10 +3,10 @@
 [BEGIN_COT_EXT]
 Name=Users
 Description=Users registration and profiles
-Version=0.9.4.4
-Date=2015-08-07
+Version=1.4.6
+Date=2016-06-02
 Author=Neocrome & Cotonti Team
-Copyright=(c) Cotonti Team 2008-2015
+Copyright=(c) Cotonti Team 2008-2016
 Notes=BSD License
 Auth_guests=R
 Lock_guests=A
@@ -15,7 +15,7 @@ Lock_members=
 [END_COT_EXT]
 
 [BEGIN_COT_EXT_CONFIG]
-disablereg=01:radio:0,1:0:
+disablereg=01:radio::0:
 maxusersperpage=02:string::50:
 regrequireadmin=03:radio::0:
 regnoactivation=04:radio::0:

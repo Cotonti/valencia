@@ -77,7 +77,7 @@ $L['forums_newpoll'] = 'Новый опрос';
 $L['forums_titletooshort'] = 'Название темы слишком короткое или отсутствует';
 $L['forums_topiclocked'] = 'Тема заблокирована, новые сообщения запрещены';
 $L['forums_topicoptions'] = 'Опции темы';
-$L['forums_updatedby'] = '<br /><em>Отредактировано: %1$s (%2$s, %3$s назад)</em>';
+$L['forums_updatedby'] = 'Отредактировано: %1$s (%2$s, %3$s назад)';
 $L['forums_postedby'] = 'Опубликовал(а)';
 $L['forums_edittimeoutnote'] = 'Время для редактирования или удаления собственного сообщения: ';
 
@@ -99,8 +99,8 @@ $L['forums_sticky'] = 'Тема закреплена (нет новых)';
 $L['forums_newpostssticky'] = 'Тема закреплена (есть новые)';
 $L['forums_locked'] = 'Тема закрыта (нет новых)';
 $L['forums_newpostslocked'] = 'Тема закрыта (есть новые)';
-$L['forums_announcment'] = 'Обьявление';
-$L['forums_newannouncment'] = 'Новые обьявления';
+$L['forums_announcment'] = 'Объявление';
+$L['forums_newannouncment'] = 'Новые объявления';
 $L['forums_movedoutofthissection'] = 'Перенесена в другой раздел';
 
 $L['forums_announcement'] = 'Объявление';

@@ -15,12 +15,20 @@ Hooks=usertags.main
 
 defined('COT_CODE') or die('Wrong URL');
 
+// we need globals as it's a cot_generate_usertags() scope
+global $R;
+
 require_once cot_incfile('userimages', 'plug');
 require_once cot_incfile('userimages', 'plug', 'resources');
-$userimages = cot_userimages_config_get();
 
-foreach($userimages as $code => $settings)
+if (is_array($user_data))
 {
-	$temp_array[strtoupper($code)] = cot_userimages_build($user_data['user_'.$code], $code);
-	$temp_array[strtoupper($code).'_SRC'] = $user_data['user_'.$code];
+	$userimages = cot_userimages_config_get();
+
+	foreach ($userimages as $code => $settings)
+	{
+		$uimage = $user_data['user_' . $code];
+		$temp_array[strtoupper($code) . '_SRC'] = $uimage;
+		$temp_array[strtoupper($code)] = cot_userimages_build( is_file($uimage) ? $uimage : '', $code );
+	}
 }

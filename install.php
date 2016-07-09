@@ -82,10 +82,9 @@ if (isset($cfg['new_install']) && $cfg['new_install'])
 		$lang = cot_import('lang', 'P', 'ALP');
 		if (empty($lang))
 		{
-			$lang = 'en';
+			$lang = cot_lang_determine();
 		}
 	}
-
 	else
 	{
 		$lang = $_SESSION['cot_inst_lang'];
